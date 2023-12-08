@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b04ee4730a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Olá! Seja bem vindo,</p>
+            <h1>Meu nome é <span>Felipe Leme Dias</span> <br>e estou em busca de oportunidades para aplicar minhas habilidades e crescer no mundo da tecnologia e programação. Obrigado!</h1>
+        </div>
+
+    </div>
+</div>
+<!--------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img id="img1" src="imagens/eu.jpg" alt="">
+               <img id="img2" src="imagens/eu2.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title>">Sobre mim</h1>
+                <p>
+                    Sou um graduando em Sistemas de Informação na Universidade Federal de Uberlândia, com uma sólida experiência como 
+                    Diretor de Marketing na A.A.A MOCA. Minha atuação incluiu o desenvolvimento 
+                    e execução de estratégias de marketing para promover atividades esportivas e culturais, bem como a coordenação de torneios
+                    de eSports populares. Com fluência em português e um nível médio a avançado de inglês, estou comprometido em impulsionar
+                    a inovação e o sucesso por meio da minha paixão pela tecnologia e marketing.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Linguagens</span><br>HTML, CSS, JavaScript, PHP, Bootstrap e JQuery, Java, C, Python, SQL e GoLang.</li>
+                        <li><span>Tecnologias e Ferramentas </span><br>VSCode, Android Studio, Git, GitHub e LaTeX.</li>
+                        <li><span>Databases</span><br>Postgree MySQL, PHP MyAdmin.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Experiência</span><br>Atualmente estou associado ao cargo de Diretor de Marteting da
+                          A.A.A. MOCA UFU, onde sou responsável por orquestrar estratégias de marketing 
+                          que impulsionaram a participação em atividades culturais. Além disso, coordenei torneios de eSports, como League of Legends, Fifa 23, Valorant etc.
+                           Minha habilidade de lidar com desafios, como adaptação a tendências de entretenimento e restrições pandêmicas, 
+                           fortaleceu minha capacidade de tomar decisões rápidas e criativas para criar experiências memoráveis que enriqueceram a vida 
+                           acadêmica dos estudantes.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Atualmente</span><br>Sistemas de Informação - UFU</li>
+                        <li><span>2022 - Atualmente</span><br>Diretor de Marketing - A.A.A. MOCA UFU</li>
+                    </ul>
+                </div>
+                <a href="imagens/curriculum.png" download class="btn btn2">Download Curriculum</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!--------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title>">Meus serviços</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code fa-flip"></i>
+                <h2>Desenvolvimento Web</h2>
+                <p>Usando HTML, CSS, JavaScript, PHP, e outras tecnologias e ferramentas de desenvolvimento de sites
+                  de projetos pessoais, fazendo sites totalmente funcionais e responsivos.</p>
+                  <a href="https://github.com/felipelemedias" target="_blank">Saiba mais</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android fa-spin"></i>
+                <h2>Desenvolvimento Java/Android Studio</h2>
+                <p>Realizei projetos acadêmicos e pessoais, onde tive a oportunidade de aplicar conceitos de desenvolvimento Android e Java, resultando em aplicativos intuitivos, funcionais e voltados para as necessidades dos usuário e acessibilidade.</p>
+                <a href="https://github.com/felipelemedias" target="_blank">Saiba mais</a>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<!------------------portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title>">Projetos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imagens/projeto1.png">
+                <div class="layer">
+                    <h3>Corrida de Nomes</h3>
+                    <p>O Projeto utiliza a API do IBGE de nomes para mostrar uma corrida dos nomes mais registrados entre os anos selecionados. 
+                    A API suporta as decadas de 1930 até 2010, além de funcionar por estado e por sexo.
+                    </p>
+                    <a href="https://github.com/Anton0910/ValorantAssistant" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imagens/projeto2.png">
+                <div class="layer">
+                    <h3>7 Wonders - Game Score</h3>
+                    <p>Um aplicativo Game Score com uma
+                      interface fácil de usar que permitirá que os jogadores
+                      registrem pontos de forma simples e rápida.
+                    </p>
+                    <a href="https://github.com/felipelemedias/7Wonders_GameScore" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imagens/organizador-de-tarefas.jpg">
+                <div class="layer">
+                    <h3>Sistema de Tarefas - Banco de Dados</h3>
+                    <p>O presente projeto propõe a criação de um banco de dados para um sistema de lista de tarefas, com o
+                      objetivo de organizar e gerenciar as atividades diárias, tanto em âmbito pessoal quanto profissional.
+                    </p>
+                    <a href="https://github.com/felipelemedias/banco_dados_1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<!------------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Entre em contato</h1>
+                <p><i class="fa-solid fa-paper-plane fa-beat-fade"></i>flemedias@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/felipelemedias/" target="_blank"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                    <a href="https://www.instagram.com/felipelemedias/"  target="_blank"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                    <a href="https://github.com/felipelemedias"  target="_blank"><i class="fa-brands fa-github fa-bounce"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5517992289149&text=oi"  target="_blank"><i class="fa-brands fa-whatsapp fa-bounce"></i></a>
+                </div>
+                
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023 Felipe Leme Dias</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+
+<script>
+    const msg=document.getElementById("msg")
+    form.addEventListner('submit', e=>{
+        e.preventDefault()
+        fetch(scriptURL, {method: 'Post', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfullly"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(erroe => console.error('Error!', error.message))
+    })
+</script>
+    
+</body>
+</html>
